@@ -3,8 +3,8 @@ package Auth
 import (
 	"encoding/json"
 	"fmt"
-	"go-rest-api/Constants"
-	"go-rest-api/Models"
+	"learngolang/Constants"
+	"learngolang/Models"
 	"net/http"
 	"strings"
 
