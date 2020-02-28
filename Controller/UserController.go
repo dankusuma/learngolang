@@ -2,8 +2,8 @@ package Controller
 
 import (
 	"encoding/json"
-	"go-rest-api/Data"
-	"go-rest-api/Models"
+	"learngolang/Data"
+	"learngolang/Models"
 	"net/http"
 
 	"github.com/google/uuid"

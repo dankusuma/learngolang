@@ -1,8 +1,8 @@
 package Data
 
 import (
-	"go-rest-api/Constants"
-	"go-rest-api/Models"
+	"learngolang/Constants"
+	"learngolang/Models"
 
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/postgres"

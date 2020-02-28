@@ -1,8 +1,8 @@
 package main
 
 import (
-	"go-rest-api/Auth"
-	"go-rest-api/Controller"
+	"learngolang/Auth"
+	"learngolang/Controller"
 	"log"
 	"net/http"
 
