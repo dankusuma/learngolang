@@ -1,1 +1,1 @@
-web: API
+web: learngolang
