@@ -1,20 +1,25 @@
 package main
 
 import (
-	"log"
-	"net/http"
-
+	"github.com/codegangsta/negroni"
 	"github.com/dankusuma/learngolang/Controller"
 
 	"github.com/dankusuma/learngolang/Auth"
 
 	"github.com/gorilla/mux"
+
+	"os"
 )
 
 func main() {
-	router := mux.NewRouter().StrictSlash(true)
-	router.HandleFunc("/GenerateJwt", Auth.GenerateToken)
+	router := mux.NewRouter()
+	router.HandleFunc("/GenerateToken", Auth.GenerateToken)
 	router.HandleFunc("/Register", Auth.ValidateMiddleware(Controller.CreateCustomer))
 	router.HandleFunc("/Login", Auth.ValidateMiddleware(Controller.Login))
-	log.Fatal(http.ListenAndServe(":8080", router))
+	n := negroni.New()
+	n.UseHandler(router)
+
+	// port := "8080"
+	port := os.Getenv("PORT")
+	n.Run(":" + port)
 }

@@ -2,6 +2,12 @@
 
 
 [[projects]]
+  name = "github.com/codegangsta/negroni"
+  packages = ["."]
+  revision = "c6a59be0ce122566695fbd5e48a77f8f10c8a63a"
+  version = "v1.0.0"
+
+[[projects]]
   name = "github.com/dgrijalva/jwt-go"
   packages = ["."]
   revision = "06ea1031745cb8b3dab3f6a236daf2b0aa468b7e"
@@ -52,6 +58,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "195edbf760f9a5b89194c2efcac38673203410cfecd5ba930bf3e63fd1c74e06"
+  inputs-digest = "123195f264cafeff3e15cb1ae686868609787c0e52e9ddcfddd7ae827ad97f56"
   solver-name = "gps-cdcl"
   solver-version = 1
